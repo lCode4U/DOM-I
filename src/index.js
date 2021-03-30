@@ -42,3 +42,7 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["img"]["logo-img"])
+
+let headImg = document.getElementById("cta-img")
+headImg.setAttribute('src', siteContent.img['header-img'])
+console.log(headImg);

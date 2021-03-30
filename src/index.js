@@ -40,9 +40,83 @@ const siteContent = {
 };
 
 // Example: Update the img src for the logo
-let logo = document.getElementById("logo-img");
+const parentBody = document.createElement("div");
+console.log(parentBody);
+
+const parentCon = document.querySelectorAll(".siteContent")
+console.log(parentCon);
+
+const logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["img"]["logo-img"])
 
-let headImg = document.getElementById("cta-img")
+const headImg = document.getElementById("cta-img")
 headImg.setAttribute('src', siteContent.img['header-img'])
 console.log(headImg);
+
+const newTitle = document.querySelector("title");
+console.log(newTitle);
+
+
+ const ctaBut = document.querySelector('button');
+ ctaBut.innerHTML = siteContent.cta.button;
+ console.log(ctaBut);
+
+
+
+ const midImg = document.querySelector(`.middle-img`)
+ midImg.setAttribute('src', siteContent.img['mid-page-img'])
+ console.log(midImg);
+
+
+const ctaCon = document.querySelector(".cta-text");
+ctaCon.innerHTML = siteContent.cta.h1;
+console.log(ctaCon);
+
+
+const mainCon = document.querySelector(".main-content");
+console.log(mainCon);
+
+const topCon = document.querySelector(".top-content");
+const bottCon = document.querySelector(".bottom-content");
+console.log(topCon);
+console.log(bottCon);
+
+
+// parentNode.prepend(...nodeorDomStrinfs); add before first child to parent element//
+//       var parent = document.createElement("div");//
+//       var p = document.createElement("p");//
+//       var span = document.createElement("span");//
+//       parent.append(p);//
+//       parent.prepend(span);//
+
+// console.log(parent.childNodes);  NodeList [ <span>, <p> ]//
+
+//console.log(siteContent.nav);
+
+
+  //const navAnchors = parentCon[]
+
+ console.log(parentCon.entries);
+//function anchorCallback(Object)  {
+  //return 
+    
+  //};
+
+  //anchorCallback(siteContent.nav);
+
+
+
+
+
+//  const navAnchors = document.querySelectorAll("a"); 
+//  function anchorCallback(Object, entries) {
+//    return navAnchors.forEach(entry => {
+     
+//    });
+//  } 
+  // anchorCallback();
+ // const anchorCallback = navAnchors['nav', 'values'];
+ // navAnchors.forEach(anchorCallback(navAnchors => {
+ //   navAnchors.setAttribute('nav-item', ["a"]);
+ // }));
+  // console.log(navAnchors);

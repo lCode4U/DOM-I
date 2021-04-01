@@ -13,15 +13,15 @@ const siteContent = {
   },
   "main-content": {
     "features-h4": "Features",
-    "features-content": "Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.",
+    "features-content": "Features contentNodeListum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.",
     "about-h4": "About",
-    "about-content": "About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.",
+    "about-content": "About contentNodeListum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.",
     "services-h4": "Services",
-    "services-content": "Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.",
+    "services-content": "Services contentNodeListum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.",
     "product-h4": "Product",
-    "product-content": "Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.",
+    "product-content": "Product contentNodeListum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.",
     "vision-h4": "Vision",
-    "vision-content": "Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.",
+    "vision-content": "Vision contentNodeListum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.",
   },
   contact: {
     "contact-h4": "Contact",
@@ -43,6 +43,7 @@ const siteContent = {
 
 //this is to select content
 const parentHead = document.querySelector("header");
+
 const logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["img"]["logo-img"])
 console.log(logo);
@@ -54,31 +55,14 @@ console.log(parentCon);
 const navCon = document.querySelectorAll("nav a");
 console.log(navCon);
 
-navCon.forEach((item, i) => {
-  return item.textContent = siteContent["nav"]; {
-    'nav-item-${i +1'
-  }
-});
+navCon.forEach((document, i => {
+document.textContent = siteContent["nav"]; {
+  return  'nav-item-${i +1'}
+}));
 
 function navAnchors(navCon, anchorCallback) {
   return anchorCallback(navCon);
 }
-
-
-
-
-
-
-
-// document.textContent(siteContent.nav[length]);
-// navCon[0].innerHTML = siteContent.nav[0];
-// navCon[1].innerHTML = siteContent.nav[1];
-// navCon[2].innerHTML = siteContent.nav[2];
-// navCon[3].innerHTML = siteContent.nav[3];
-// navCon[4].innerHTML = siteContent.nav[4];
-// navCon[5].innerHTML = siteContent.nav[5];
-// console.log(navCon);
-
 
 
 const ctaCon = document.querySelector("section.cta");
@@ -88,19 +72,19 @@ const ctaP = document.createElement("p");
 console.log(ctaCon);
 
 
-// this is to push new elements to dom
+// this is to push newNodeLists to dom
 const parentBody = document.createElement("div");
 console.log(parentBody);
 
 const mainCon = document.querySelector("section.main-content");
 console.log(mainCon);
 
-const topCon = document.querySelector("top-content");
+const topCon = document.querySelector("div.top-content");
 const topH4 = document.createElement("h4");
 const topP = document.createElement("p");
 console.log(topCon);
 
-const bottCon = document.querySelector(".bottom-content");
+const bottCon = document.querySelector("div.bottom-content");
 const bottH4 = document.createElement("h4");
 const bottP = document.createElement("p");
 console.log(bottCon);
@@ -110,9 +94,6 @@ console.log(contactCon);
 
 const footCon = document.querySelector("footer");
 console.log(footCon);
-
-
-
 
 const headImg = document.getElementById("cta-img")
 headImg.setAttribute('src', siteContent.img['header-img'])

@@ -56,8 +56,9 @@ const navCon = document.querySelectorAll("nav a");
 console.log(navCon);
 
 navCon.forEach((document, i => {
-document.textContent = siteContent["nav"]; {
-  return  'nav-item-${i +1'}
+  document.textContent = siteContent["nav"]; {
+    return 'nav-item-${i +1'
+  }
 }));
 
 function navAnchors(navCon, anchorCallback) {

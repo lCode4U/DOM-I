@@ -55,20 +55,17 @@ console.log(parentCon);
 const navCon = document.querySelectorAll("nav a");
 console.log(navCon);
 
-(navCon.forEach(element => {
-  let navAnchors = navCon.entries(key,value);
-  return navCon(navAnchors);
-})
-);
-// navCon.forEach((document, i => {
-//   document.textContent = siteContent["nav"]; {
-//     return 'nav-item-${i +1'
-//   }
-// }));
+function navAnchors(navCon, anchorCallback) {
+  return anchorCallback(navCon);
+}
 
-// function navAnchors(navCon, anchorCallback) {
-//   return anchorCallback(navCon);
+
+//  navCon.forEach((document, i => {
+//    document.textContent = siteContent["nav"]; {
+//   return 'nav-item-${i +1'
 // }
+//  }));
+
 
 
 const ctaCon = document.querySelector("section.cta");

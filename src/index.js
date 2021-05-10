@@ -41,96 +41,90 @@ const siteContent = {
 
 //Example: Update the img src for the logo
 // this is to create elements
-const parentHead = document.createElement("head");
-
-const ctaImg = document.createElement("img");
-ctaImg.classList.add("cta-img");
-
-const logoNew = document.createElement("img");
-logoNew.classList.add("logo");
-
-const midImg = document.createElement("img");
-midImg.classList.add("middle-img");
-
-const parentCon = document.createElement("div");
-parentCon.classList.add("container");
+const docHead = document.querySelector('head');
+const docTitle = document.querySelector('title');
+const docBody = document.querySelector('body');
 
 
-const navCon = document.createElement("nav");
-const navAnchors = document.createElement("a")
+const mainCon = document.querySelector('.container');
+const newHeader = document.querySelector('header');
 
-const ctaCon = document.createElement("section");
-ctaCon.classList.add("cta");
-const ctaH1 = document.createElement("h1");
-const ctaBut = document.createElement('button');
+const docNav = document.querySelector('nav');
 
 
-const mainCon = document.createElement("section");
-mainCon.classList.add("main-content");
+const anchorTags = document.querySelectorAll('nav > a ');
 
-const topCon = document.createElement("div");
-topCon.classList.add("top-content");
+const logoImg = document.querySelector('#logo-img');
 
-const toptextCon = document.createElement("div");
-toptextCon.classList.add("text-content");
-const topH4 = document.createElement("h4");
-const topP = document.createElement("p");
-
-
-const secTextCon = document.createElement("div");
-secTextCon.classList.add("text-content")
-const secH4 = document.createElement("h4");
-const secP = document.createElement("p");
+const docHeader = document.querySelector('.cta');
+const ctaText = document.querySelector('.cta-text');
+const ctaHeader = siteContent.cta.h1;
+const ctaBut = siteContent.cta.button;
+const ctaImg = document.querySelector('#cta-img');
 
 
-const boCon = document.createElement("div");
-boCon.classList.add("bottom-content");
+const topCon = document.querySelector('.top-content');
+const textTopCon = document.querySelector('.text-content');
+const textTopCon2 = document.querySelectorAll('.text-content')[1];
 
-const bTextCon = document.createElement("div");
-bTextCon.classList.add("text-content");
-bH4 = document.createElement("h4");
-bP = document.createElement("p");
+const midImg = document.querySelector('.middle-img');
 
-
-const bTextCon2 = document.createElement("div");
-bTextCon2.classList.add("text-content2");
-b2H4 = document.createElement("h4");
-b2P = document.createElement("p");
-
-const bTextCon3 = document.createElement("div");
-bTextCon3.classList.add("text-content3");
-b3H4 = document.createElement("h4");
-b3P = document.createElement("p");
-
-const contactCon = document.createElement("section");
-contactCon.classList.add("contact");
-const cH4 = document.createElement("h4");
-const cParaCon = document.createElement("p");
-const cParaCon2 = document.createElement("p");
-const cParaCon3 = document.createElement("p");
+const bottomCon = document.querySelector('.bottom-content')
+const textBCon = document.querySelector('.bottom-content > .text-content');
+const textBCon2 = bottomCon.children[1];
+const textBCon3 = bottomCon.children[2];
 
 
-const footerCon = document.createElement("footer");
-const footPara = document.createElement("p");
+const contactHead = document.querySelector('.contact');
+const contactAdd = contactHead.children[1];
+const contactTele = contactHead.children[2];
+const contactMail = contactHead.children[3];
 
 
+const docFooter = document.querySelector('footer')
 
 
+// captured data to tranverse
 
 
+const anchors = siteContent.nav;
+
+const docContainer = document.querySelector('.main-content');
+const featuresHeader = siteContent["main-content"]["features-h4"];
+const featuresCon = siteContent["main-content"]["features-content"];
+
+const aboutHeader = siteContent["main-content"]["about-h4"];
+const aboutCon = siteContent["main-content"]["about-content"];
+
+const servicesHeader = siteContent["main-content"]["services-h4"];
+const servicesContent = siteContent["main-content"]["services-content"];
+
+const productHeader = siteContent["main-content"]["product-h4"];
+const productContent = siteContent["main-content"]["product-content"];
+
+const visionHeader = siteContent["main-content"]["vision-h4"];
+const visionContent = siteContent["main-content"]["vision-content"];
+
+const contactHeader = siteContent.contact["contact-h4"];
+const contactAddress = siteContent.contact["contact-address"];
+const contactPhone = siteContent.contact["contact-phone"];
+const contactEmail = siteContent.contact["contact-email"];
+
+const footerCopyright = siteContent.footer.copyright;
+console.log(footerCopyright);
 
 
-
-// this is to select content
-const originalCon = siteContent.querySelectorAll('a');
+// this manipulate elements
 
 
+ctaImg.setAttribute('src', siteContent.img["header-img"]);
+ctaImg.alt = "CTA Image";
 
+logoImg.setAttribute('src', siteContent.img["logo-img"]);
+logoImg.alt = "Logo Image";
 
-
-
-
-// this is to push elements to dom
+midImg.setAttribute('src', siteContent.img["mid-page-img"]);
+midImg.alt = "Middle Image";
 
 
 
@@ -143,61 +137,11 @@ const originalCon = siteContent.querySelectorAll('a');
 
 
 
-// this is to log data
-
-// console.log(parentHead);
-// console.log(logoNew);
-// console.log(parentCon);
-// console.log(navCon);
-// console.log(navAnchors);
-// console.log(ctaCon);
-// console.log(ctaH1);
-// console.log(ctaBut);
-// console.log(mainCon);
-// console.log(topCon);
-// console.log(toptextCon);
-// console.log(topH4);
-// console.log(topP);
-// console.log(secTextCon);
-// console.log(secH4);
-// console.log(secP);
-// console.log(boCon);
-// console.log(bTextCon);
-// console.log(bH4);
-// console.log(bP);
-// console.log(midImg);
-// console.log(bTextCon2);
-// console.log(b2H4);
-// console.log(b2P);
-// console.log(bTextCon3);
-// console.log(b3H4);
-// console.log(b3P);
-// console.log(contactCon);
-// console.log(cH4);
-// console.log(cParaCon);
-// console.log(cParaCon2);
-// console.log(cParaCon3);
-// console.log(footPara);
-// console.log(footerCon);
-console.log(originalCon);
-
-// console.log();
-// console.log();
-// console.log();
-// console.log();
-// console.log();
-// console.log();
-// console.log();
-// console.log();
-// console.log();
-// console.log();
-// console.log();
-// console.log();
-// console.log();
-// console.log();
-// console.log();
 
 
-
-
-
+console.log(docHead,docBody,docTitle,docFooter);
+console.log(textBCon,textBCon2, textBCon3,bottomCon, footerCopyright);
+console.log(mainCon,newHeader,ctaHeader);
+console.log(anchors,anchorTags,ctaBut);
+console.log(textTopCon,textTopCon2,topCon);
+console.log(contactHead,contactAdd,contactTele,contactMail);

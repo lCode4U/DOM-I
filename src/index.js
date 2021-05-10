@@ -58,8 +58,8 @@ const logoImg = document.querySelector('#logo-img');
 
 const docHeader = document.querySelector('.cta');
 const ctaText = document.querySelector('.cta-text');
-const ctaHeader = siteContent.cta.h1;
-const ctaBut = siteContent.cta.button;
+const ctaHeader = document.querySelector('.cta-text > h1');
+const ctaBut = document.querySelector('.cta-text > button');
 const ctaImg = document.querySelector('#cta-img');
 
 
@@ -87,9 +87,11 @@ const docFooter = document.querySelector('footer')
 // captured data to tranverse
 
 
-const anchors = siteContent.nav;
+const anchors = siteContent['nav'];
+const ctaH1 = siteContent['cta']['h1']
+const butP = siteContent['cta']['button'];
 
-const docContainer = document.querySelector('.main-content');
+const docContainer = document.querySelector('body > div');
 const featuresHeader = siteContent["main-content"]["features-h4"];
 const featuresCon = siteContent["main-content"]["features-content"];
 
@@ -105,12 +107,12 @@ const productContent = siteContent["main-content"]["product-content"];
 const visionHeader = siteContent["main-content"]["vision-h4"];
 const visionContent = siteContent["main-content"]["vision-content"];
 
-const contactHeader = siteContent.contact["contact-h4"];
-const contactAddress = siteContent.contact["contact-address"];
-const contactPhone = siteContent.contact["contact-phone"];
-const contactEmail = siteContent.contact["contact-email"];
+const contactHeader = siteContent['contact']["contact-h4"];
+const contactAddress = siteContent['contact']["contact-address"];
+const contactPhone = siteContent['contact']["contact-phone"];
+const contactEmail = siteContent['contact']["contact-email"];
 
-const footerCopyright = siteContent.footer.copyright;
+const footerCopyright = siteContent['footer']['copyright'];
 console.log(footerCopyright);
 
 
@@ -126,11 +128,14 @@ logoImg.alt = "Logo Image";
 midImg.setAttribute('src', siteContent.img["mid-page-img"]);
 midImg.alt = "Middle Image";
 
+ctaHeader.textContent = ctaH1;
+ctaBut.textContent = butP;
 
-
-
-
-
+const anchorCb = function(){
+anchorTags.forEach(anchors(item => {
+ console.log(anchors[item].textContent);
+ 
+}))};
 
 
 
@@ -141,7 +146,7 @@ midImg.alt = "Middle Image";
 
 console.log(docHead,docBody,docTitle,docFooter);
 console.log(textBCon,textBCon2, textBCon3,bottomCon, footerCopyright);
-console.log(mainCon,newHeader,ctaHeader);
-console.log(anchors,anchorTags,ctaBut);
+console.log(mainCon,newHeader,ctaHeader,ctaBut,ctaText);
+console.log(anchors,anchorTags);
 console.log(textTopCon,textTopCon2,topCon);
-console.log(contactHead,contactAdd,contactTele,contactMail);
+console.log(contactHead,contactAdd,contactTele,contactMail)

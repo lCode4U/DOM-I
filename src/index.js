@@ -65,20 +65,37 @@ const ctaImg = document.querySelector('#cta-img');
 
 const topCon = document.querySelector('.top-content');
 const textTopCon = document.querySelector('.text-content');
-const textTopCon2 = document.querySelectorAll('.text-content')[1];
+const headerTT1 = textTopCon.children[0];
+const conTT1 = textTopCon.children[1];
+
+const textTopCon2 = textTopCon.children[1];
+const headerTT2 = textTopCon2.children[0];
+const conTT2 = textTopCon2.children[1];
+
 
 const midImg = document.querySelector('.middle-img');
 
-const bottomCon = document.querySelector('.bottom-content')
-const textBCon = document.querySelector('.bottom-content > .text-content');
+const bottomCon = document.querySelectorAll('.bottom-content');
+console.log(bottomCon,textBCon);
+const textBCon = document.querySelector('.bottom-content > .text-content')
+const headerBT = textBCon.children[0];
+const conBT = textBCon.children[1];
+
 const textBCon2 = bottomCon.children[1];
+const headerBT2 = textBCon2.children[0];
+const conBT2 = textBCon2.children[1];
+
 const textBCon3 = bottomCon.children[2];
+const headerBT3 = textBCon3.children[0];
+const conBT3 = textBCon3.children[1];
 
 
-const contactHead = document.querySelector('.contact');
-const contactAdd = contactHead.children[1];
-const contactTele = contactHead.children[2];
-const contactMail = contactHead.children[3];
+const contactCon = document.querySelector('.contact');
+
+const contactHead = contactCon.children[0];
+//const contactAdd = 
+//const contactTele = 
+//const contactMail = 
 
 
 const docFooter = document.querySelector('footer')
@@ -107,11 +124,11 @@ const productContent = siteContent["main-content"]["product-content"];
 const visionHeader = siteContent["main-content"]["vision-h4"];
 const visionContent = siteContent["main-content"]["vision-content"];
 
-const contactHeader = siteContent['contact']["contact-h4"];
-const contactAddress = siteContent['contact']["contact-address"];
-const contactPhone = siteContent['contact']["contact-phone"];
-const contactEmail = siteContent['contact']["contact-email"];
 
+const contactHeader = siteContent['contact']["contact-h4"];
+const contactAddress = siteContent['contact']["address"];
+const contactPhone = siteContent['contact']['phone'];
+const contactEmail = siteContent['contact']["email"];
 const footerCopyright = siteContent['footer']['copyright'];
 console.log(footerCopyright);
 
@@ -128,25 +145,41 @@ logoImg.alt = "Logo Image";
 midImg.setAttribute('src', siteContent.img["mid-page-img"]);
 midImg.alt = "Middle Image";
 
-ctaHeader.textContent = ctaH1;
-ctaBut.textContent = butP;
+// ctaHeader.textContent = ctaH1;
+// ctaBut.textContent = butP;
 
-const anchorCb = function(){
-anchorTags.forEach(anchors(item => {
- console.log(anchors[item].textContent);
+// const anchorCb = function(){
+// anchorTags.forEach(anchors(item => {
+//  console.log(anchors[item].textContent);
  
-}))};
+// }))};
+// headerTT1.textContent = featuresHeader;
+// conTT1.textContent = featuresCon;
+// headerTT2.textContent = aboutHeader;
+// conTT2.textContent = aboutCon;
+
+// headerBT.textContent = servicesHeader;
+// headerBT2.textContent = productHeader;
+// headerBT3.textContent = visionHeader;
+
+// conBT.textContent = servicesContent;
+// conBT2.textContent = productContent;
+// conBT3.textContent = visionContent;
+
+// contactHead.textContent = contactHeader;
+// contactAdd.textContent = contactAddress;
+// contactTele.textContent = contactPhone;
+// contactMail.textContent = contactEmail;
+//docFooter.children[0].textContent = footerCopyright;
 
 
 
-
-
-
-
-
-console.log(docHead,docBody,docTitle,docFooter);
-console.log(textBCon,textBCon2, textBCon3,bottomCon, footerCopyright);
-console.log(mainCon,newHeader,ctaHeader,ctaBut,ctaText);
-console.log(anchors,anchorTags);
-console.log(textTopCon,textTopCon2,topCon);
-console.log(contactHead,contactAdd,contactTele,contactMail)
+// console.log(docHead,docBody,docTitle,docFooter);
+// console.log(textBCon,textBCon2, textBCon3);
+// console.log(headerBT,headerBT2,headerBT3,headerTT1,headerTT2);
+// console.log(conBT,conBT2,conBT3,conTT1,conTT2);
+// console.log(mainCon,newHeader,ctaHeader,ctaBut,ctaText);
+// console.log(anchors,anchorTags,bottomConn);
+//  console.log(textTopCon,textTopCon2,topCon);
+// console.log(contactHead,contactAdd,contactTele,contactMail)
+// console.log(contactHead,contactCon)

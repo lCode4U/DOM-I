@@ -41,74 +41,82 @@ const siteContent = {
 
 //Example: Update the img src for the logo
 // this is to create elements
-const docHead = document.querySelector('head');
-const docTitle = document.querySelector('title');
-const docBody = document.querySelector('body');
+const docHead = document.createElement('head');
+const docTitle = document.createElement('title');
+const docBody = document.createElement('body');
 
 
-const mainCon = document.querySelector('.container');
-const newHeader = document.querySelector('header');
+const bCon = document.createElement('div');
+const newHeader = document.createElement('header');
 
-const docNav = document.querySelector('nav');
-
-
-const anchorTags = document.querySelectorAll('nav > a ');
-
-const logoImg = document.querySelector('#logo-img');
-
-const docHeader = document.querySelector('.cta');
-const ctaText = document.querySelector('.cta-text');
-const ctaHeader = document.querySelector('.cta-text > h1');
-const ctaBut = document.querySelector('.cta-text > button');
-const ctaImg = document.querySelector('#cta-img');
+const docNav = document.createElement('nav');
 
 
-const topCon = document.querySelector('.top-content');
-const textTopCon = document.querySelector('.text-content');
-const headerTT1 = textTopCon.children[0];
-const conTT1 = textTopCon.children[1];
-
-const textTopCon2 = textTopCon.children[1];
-const headerTT2 = textTopCon2.children[0];
-const conTT2 = textTopCon2.children[1];
+const anchorTag1 = document.createElement('a');
+const anchorTag2 = document.createElement('a');
+const anchorTag3 = document.createElement('a');
+const anchorTag4 = document.createElement('a');
+const anchorTag5 = document.createElement('a');
+const anchorTag6 = document.createElement('a');
 
 
-const midImg = document.querySelector('.middle-img');
+const logoImg = document.createElement('img');
 
-const bottomCon = document.querySelectorAll('.bottom-content');
-console.log(bottomCon,textBCon);
-const textBCon = document.querySelector('.bottom-content > .text-content')
-const headerBT = textBCon.children[0];
-const conBT = textBCon.children[1];
+const docHeader = document.createElement('section');
+const ctaText = document.createElement('div');
+const ctaHeader = document.createElement('h1');
+const ctaBut = document.createElement('button');
+const ctaImg = document.createElement('img');
 
-const textBCon2 = bottomCon.children[1];
-const headerBT2 = textBCon2.children[0];
-const conBT2 = textBCon2.children[1];
 
-const textBCon3 = bottomCon.children[2];
-const headerBT3 = textBCon3.children[0];
-const conBT3 = textBCon3.children[1];
+
+const mainCon = document.createElement('section');
+const topCon = document.createElement('div');
+const textTopCon = document.createElement('div');
+const headerTT1 = document.createElement('h4');
+const conTT1 = document.createElement('p');
+
+const textTopCon2 = document.createElement('div');
+const headerTT2 = document.createElement('h4');
+const conTT2 = document.createElement('p');
+
+const midImg = document.createElement('img');
+
+
+const textBCon = document.createElement('div');
+const headerBT = document.createElement('h4');
+const conBT = document.createElement('p');
+
+
+const textBCon2 = document.createElement('div');
+const headerBT2 = document.createElement('h4');
+const conBT2 = document.createElement('p');
+
+
+const textBCon3 = document.createElement('div');
+const headerBT3 = document.createElement('h4');
+const conBT3 = document.createElement('p');
+
 
 
 const contactCon = document.querySelector('.contact');
 
-const contactHead = contactCon.children[0];
-//const contactAdd = 
-//const contactTele = 
-//const contactMail = 
+const contactHead = document.createElement('section');
+const contactAdd = document.createElement('p');
+const contactTele = document.createElement('p');
+const contactMail = document.createElement('p');
 
 
-const docFooter = document.querySelector('footer')
+const docFooter = document.createElement('footer')
 
 
 // captured data to tranverse
-
 
 const anchors = siteContent['nav'];
 const ctaH1 = siteContent['cta']['h1']
 const butP = siteContent['cta']['button'];
 
-const docContainer = document.querySelector('body > div');
+//const docContainer = document.querySelector('body > div');
 const featuresHeader = siteContent["main-content"]["features-h4"];
 const featuresCon = siteContent["main-content"]["features-content"];
 
@@ -130,20 +138,20 @@ const contactAddress = siteContent['contact']["address"];
 const contactPhone = siteContent['contact']['phone'];
 const contactEmail = siteContent['contact']["email"];
 const footerCopyright = siteContent['footer']['copyright'];
-console.log(footerCopyright);
+
 
 
 // this manipulate elements
 
 
-ctaImg.setAttribute('src', siteContent.img["header-img"]);
-ctaImg.alt = "CTA Image";
+// ctaImg.setAttribute('src', siteContent.img["header-img"]);
+// ctaImg.alt = "CTA Image";
 
-logoImg.setAttribute('src', siteContent.img["logo-img"]);
-logoImg.alt = "Logo Image";
+// logoImg.setAttribute('src', siteContent.img["logo-img"]);
+// logoImg.alt = "Logo Image";
 
-midImg.setAttribute('src', siteContent.img["mid-page-img"]);
-midImg.alt = "Middle Image";
+// midImg.setAttribute('src', siteContent.img["mid-page-img"]);
+// midImg.alt = "Middle Image";
 
 // ctaHeader.textContent = ctaH1;
 // ctaBut.textContent = butP;
@@ -170,7 +178,7 @@ midImg.alt = "Middle Image";
 // contactAdd.textContent = contactAddress;
 // contactTele.textContent = contactPhone;
 // contactMail.textContent = contactEmail;
-//docFooter.children[0].textContent = footerCopyright;
+// docFooter.children[0].textContent = footerCopyright;
 
 
 

@@ -60,13 +60,13 @@ const anchorTag5 = document.createElement('a');
 const anchorTag6 = document.createElement('a');
 
 
-const logoImg = document.createElement('img');
+const logoImg = document.querySelector('#logo-img');
 
 const docHeader = document.createElement('section');
 const ctaText = document.createElement('div');
 const ctaHeader = document.createElement('h1');
-const ctaBut = document.createElement('button');
-const ctaImg = document.createElement('img');
+const ctaBut = document.querySelector('button');
+const ctaImg = document.querySelector('#cta-img');
 
 
 
@@ -80,7 +80,7 @@ const textTopCon2 = document.createElement('div');
 const headerTT2 = document.createElement('h4');
 const conTT2 = document.createElement('p');
 
-const midImg = document.createElement('img');
+const midImg = document.querySelector('#middle-img');
 
 
 const textBCon = document.createElement('div');
@@ -112,9 +112,10 @@ const docFooter = document.createElement('footer')
 
 // captured data to tranverse
 
-const anchors = siteContent['nav'];
-const ctaH1 = siteContent['cta']['h1']
-const butP = siteContent['cta']['button'];
+//const anchors = siteContent['nav'];
+const ctaH1 = ctaHeader;
+
+const butP = ctaBut;
 
 //const docContainer = document.querySelector('body > div');
 const featuresHeader = siteContent["main-content"]["features-h4"];
@@ -144,17 +145,17 @@ const footerCopyright = siteContent['footer']['copyright'];
 // this manipulate elements
 
 
-// ctaImg.setAttribute('src', siteContent.img["header-img"]);
-// ctaImg.alt = "CTA Image";
+ctaImg.setAttribute('src', siteContent.img["header-img"]);
+ctaImg.alt = "CTA Image";
 
-// logoImg.setAttribute('src', siteContent.img["logo-img"]);
-// logoImg.alt = "Logo Image";
+logoImg.setAttribute('src', siteContent.img["logo-img"]);
+logoImg.alt = "Logo Image";
 
-// midImg.setAttribute('src', siteContent.img["mid-page-img"]);
-// midImg.alt = "Middle Image";
+midImg.setAttribute('src', siteContent.img["mid-page-img"]);
+midImg.alt = "Middle Image";
 
-// ctaHeader.textContent = ctaH1;
-// ctaBut.textContent = butP;
+ctaHeader.innerHTML = siteContent['cta']['h1'];
+ctaBut.textContent = siteContent['cta']['button'];
 
 // const anchorCb = function(){
 // anchorTags.forEach(anchors(item => {

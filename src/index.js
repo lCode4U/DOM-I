@@ -118,27 +118,27 @@ const ctaH1 = ctaHeader;
 const butP = ctaBut;
 
 //const docContainer = document.querySelector('body > div');
-const featuresHeader = siteContent["main-content"]["features-h4"];
-const featuresCon = siteContent["main-content"]["features-content"];
+// const featuresHeader = siteContent["main-content"]["features-h4"];
+// const featuresCon = siteContent["main-content"]["features-content"];
 
-const aboutHeader = siteContent["main-content"]["about-h4"];
-const aboutCon = siteContent["main-content"]["about-content"];
+// const aboutHeader = siteContent["main-content"]["about-h4"];
+// const aboutCon = siteContent["main-content"]["about-content"];
 
-const servicesHeader = siteContent["main-content"]["services-h4"];
-const servicesContent = siteContent["main-content"]["services-content"];
+// const servicesHeader = siteContent["main-content"]["services-h4"];
+// const servicesContent = siteContent["main-content"]["services-content"];
 
-const productHeader = siteContent["main-content"]["product-h4"];
-const productContent = siteContent["main-content"]["product-content"];
+// const productHeader = siteContent["main-content"]["product-h4"];
+// const productContent = siteContent["main-content"]["product-content"];
 
-const visionHeader = siteContent["main-content"]["vision-h4"];
-const visionContent = siteContent["main-content"]["vision-content"];
+// const visionHeader = siteContent["main-content"]["vision-h4"];
+// const visionContent = siteContent["main-content"]["vision-content"];
 
 
-const contactHeader = siteContent['contact']["contact-h4"];
-const contactAddress = siteContent['contact']["address"];
-const contactPhone = siteContent['contact']['phone'];
-const contactEmail = siteContent['contact']["email"];
-const footerCopyright = siteContent['footer']['copyright'];
+// const contactHeader = siteContent['contact']["contact-h4"];
+// const contactAddress = siteContent['contact']["address"];
+// const contactPhone = siteContent['contact']['phone'];
+// const contactEmail = siteContent['contact']["email"];
+// const footerCopyright = siteContent['footer']['copyright'];
 
 
 

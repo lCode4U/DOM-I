@@ -1,4 +1,4 @@
-const siteContent = {
+let siteContent = {
     nav: {
       "nav-item-1": "Services",
       "nav-item-2": "Product",
@@ -42,82 +42,27 @@ const siteContent = {
   //Example: Update the img src for the logo
   // this is to create elements
   
-  const docHead = document.createElement('head');
-const docTitle = document.createElement('title');
-const docBody = document.createElement('body');
-
-
-const bCon = document.createElement('div');
-const newHeader = document.createElement('header');
-
-const docNav = document.createElement('nav');
-
-
-const anchorTag1 = document.createElement('a');
-const anchorTag2 = document.createElement('a');
-const anchorTag3 = document.createElement('a');
-const anchorTag4 = document.createElement('a');
-const anchorTag5 = document.createElement('a');
-const anchorTag6 = document.createElement('a');
-
-
-
-const docHeader = document.createElement('section');
-const ctaText = document.createElement('div');
-const ctaHeader = document.createElement('h1');
-
-
-
-
-const mainCon = document.createElement('section');
-const topCon = document.createElement('div');
-const textTopCon = document.createElement('div');
-const headerTT1 = document.createElement('h4');
-const conTT1 = document.createElement('p');
-
-const textTopCon2 = document.createElement('div');
-const headerTT2 = document.createElement('h4');
-const conTT2 = document.createElement('p');
-
-
-
-
-const textBCon = document.createElement('div');
-const headerBT = document.createElement('h4');
-const conBT = document.createElement('p');
-
-
-const textBCon2 = document.createElement('div');
-const headerBT2 = document.createElement('h4');
-const conBT2 = document.createElement('p');
-
-
-const textBCon3 = document.createElement('div');
-const headerBT3 = document.createElement('h4');
-const conBT3 = document.createElement('p');
-
-
-
-
-const contactHead = document.createElement('section');
-const contactAdd = document.createElement('p');
-const contactTele = document.createElement('p');
-const contactMail = document.createElement('p');
-
-
-const docFooter = document.createElement('footer')
-
-
-
+  
 
   // captured data to tranverse
-  const anchors = siteContent["nav"];
+let ctaImg = document.getElementById('cta-img');
+let logoImg = document.getElementById('logo-img');
+let midImg = document.getElementById('middle-img');
+let newButt = document.getElementsByName('button');
+
+  let main = siteContent["main-content"];
+
+ console.log(main); 
+  
+  
+  let anchors = [];
+  const newanchors = siteContent["nav"];
   console.log(anchors);
- const ctasec = siteContent["cta"];
- const main = siteContent["main-content"];
+
+ let ctasec = siteContent["cta"];
  console.log(ctasec);
- console.log(main);
-const featuresContent = siteContent
+
+let featuresContent = main["features-content"];
  console.log(featuresContent);
  
  
@@ -127,15 +72,20 @@ const featuresContent = siteContent
  
  
   // this manipulate elements
+  function arrayAnch (array){
+    anchors.forEach(anchor => {
+      return array.push(anchor);
+    });
+  }
+    arrayAnch();
   
+  ctaImg.setAttribute('src', siteContent.img["header-img"]);
+  ctaImg.alt = "CTA Image";
   
-//   ctaImg.setAttribute('src', siteContent.img["header-img"]);
-//   ctaImg.alt = "CTA Image";
+  logoImg.setAttribute('src', siteContent.img["logo-img"]);
+  logoImg.alt = "Logo Image";
   
-//   logoImg.setAttribute('src', siteContent.img["logo-img"]);
-//   logoImg.alt = "Logo Image";
-  
-//   midImg.setAttribute('src', siteContent.img["mid-page-img"]);
-//   midImg.alt = "Middle Image";
+  midImg.setAttribute('src', siteContent.img["mid-page-img"]);
+  midImg.alt = "Middle Image";
   
   

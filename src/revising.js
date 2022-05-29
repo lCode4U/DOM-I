@@ -48,22 +48,61 @@ let siteContent = {
 let ctaImg = document.getElementById('cta-img');
 let logoImg = document.getElementById('logo-img');
 let midImg = document.getElementById('middle-img');
-let newButt = document.getElementsByName('button');
+let newButt = button.textContent('button')
 
-  let main = siteContent["main-content"];
 
- console.log(main); 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//   let main = siteContent["main-content"];
+
+//  console.log(main); 
   
   
-  let anchors = [];
-  const newanchors = siteContent["nav"];
-  console.log(anchors);
+  
+//   const anchors = siteContent["nav"];
+//   console.log(anchors);
+//  let newNav = Object.values(anchors);
+//  console.log(newNav);
+ 
 
- let ctasec = siteContent["cta"];
- console.log(ctasec);
+//  let ctasec = siteContent["cta"];
+//  console.log(ctasec);
 
-let featuresContent = main["features-content"];
- console.log(featuresContent);
+// let featuresContent = main["features-content"];
+
  
  
  
@@ -72,13 +111,12 @@ let featuresContent = main["features-content"];
  
  
   // this manipulate elements
-  function arrayAnch (array){
-    anchors.forEach(anchor => {
-      return array.push(anchor);
-    });
-  }
-    arrayAnch();
+ 
   
+  
+
+
+
   ctaImg.setAttribute('src', siteContent.img["header-img"]);
   ctaImg.alt = "CTA Image";
   

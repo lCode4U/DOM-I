@@ -4,11 +4,15 @@
 
 You are going to be emulating a content management system by controlling the content in the JavaScript file instead of the HTML file. This project is an exercise pointed at selecting elements and then updating them without touching the HTML file using the DOM.
 
+<<<<<<< HEAD
 Compare `index.html` against `original.html` and notice how `index.html` is lacking text content and other things. The goal is to make the page look the same as `original.html` using JavaScript.
 
 You have been provided a [JSON object](js/index.js) with all the necessary data to accomplish this task.  Use dot or bracket notation to traverse the data provided.
+=======
+You have been provided an [object](src/index.js) with all the necessary data to accomplish this task. Use dot or bracket notation to traverse the data provided. All of your work should be done in the `src/index.js` file.
+>>>>>>> 1729105b7b1bb8a47601883ae07a7128f0aa681a
 
-**ONE RULE: You cannot update the HTML or CSS files directly.  You must use JavaScript and the DOM only for your tasks today.**
+**ONE RULE: You cannot update the HTML or CSS files directly. You must use JavaScript and the DOM only for your tasks today.**
 
 ## Instructions
 
@@ -17,14 +21,30 @@ You have been provided a [JSON object](js/index.js) with all the necessary data 
 **Follow these steps to set up and work on your project:**
 
 * [ ] Create a forked copy of this project.
+<<<<<<< HEAD
+=======
+* [ ] Add your team lead as collaborator on Github.
+>>>>>>> 1729105b7b1bb8a47601883ae07a7128f0aa681a
 * [ ] Clone your OWN version of the repository (Not Lambda's by mistake!).
+* [ ] Move into the project folder with the command line.
+* [ ] Run the command `npm install` to download project dependencies.
+* [ ] Run the command `npm start` to spin up a development server.
+* [ ] Navigate Chrome to `http://localhost:1234` to see your project. The port number might be different.
 * [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
 * [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
 * [ ] Push commits: git push origin `<firstName-lastName>`.
 
 ### Task 2a: MVP
 
+<<<<<<< HEAD
 #### Create selectors to point your data into elements
+=======
+* [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo). **Please don't merge your own pull request**
+* [ ] Add your team lead as a reviewer on the pull-request
+* [ ] Your team lead will count the project as complete by merging the branch back into master.
+
+## Task 1: Create selectors to point your data into elements
+>>>>>>> 1729105b7b1bb8a47601883ae07a7128f0aa681a
 
 * [ ] Create selectors by using any of the DOM element's methods
 * [ ] Note that IDs have been used on all images. Use the IDs to update src path content
@@ -39,7 +59,7 @@ You have been provided a [JSON object](js/index.js) with all the necessary data 
 
 * [ ] Change the color of the navigation text to be green.
 * [ ] Utilize `.appendChild()` and `.prepend()` to add two new items to the navigation system. You can call them whatever you want.
-* [ ] Check your work by looking at the [original html](original.html) in the browser
+* [ ] Check your work by looking at the [original html](src/design-files/original.html) in the browser
 
 ### Task 3: Stretch
 
@@ -48,6 +68,7 @@ You have been provided a [JSON object](js/index.js) with all the necessary data 
 
 #### Stretch Project: Digital Timer
 
+<<<<<<< HEAD
 This project is heavier on logic but employs some DOM manipulation to achieve its goals.  Go check it out here: [stretch assignment](stretch-assignment) and see how far you can get.
 
 ## Submission Format
@@ -55,3 +76,6 @@ This project is heavier on logic but employs some DOM manipulation to achieve it
 **Follow these steps for completing your project.**
 
 * [ ] Submit a Pull-Request to merge `<firstName-lastName>` Branch into `main` (student's  Repo). **Please don't merge your own pull request**
+=======
+This project is heavier on logic but employs some DOM manipulation to achieve its goals. Go check it out here: [stretch assignment](src/stretch-assignment/README.md) and see how far you can get.
+>>>>>>> 1729105b7b1bb8a47601883ae07a7128f0aa681a
